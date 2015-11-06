@@ -3,5 +3,13 @@ description: TesteAutoCode
 author:
   name: Rodrigo Medeiros
   email: rodriigomedeiros@gmail.com
-  url: null
+  url: google.com
 copyright: 2015 Rodrigo Medeiros
+imports:
+  crystal/php: ~0.3.2
+  crystal/javascript: ~0.2.0
+outputs:
+  - generator: php.ConfigGenerator
+    spec:
+      register_globals: false
+      include_path: /usr/local
